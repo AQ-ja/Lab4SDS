@@ -46,7 +46,7 @@ for filename in os.listdir(folder_path):
 # Guarda los datos en un archivo CSV
 import csv
 
-with open('dataset.csv', mode='w', newline='') as file:
+with open('completemalware.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Filename', 'PEHeader', 'Sections', 'Imports'])
     for malware in data_malware:
